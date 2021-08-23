@@ -6,7 +6,7 @@ set -x
 mv /usr/sbin/policy-rc.d.disabled /usr/sbin/policy-rc.d
 # Install python-ndg-httpsclient per #861513
 apt-get update
-apt-get -y --no-install-recommends install apache2 certbot python-certbot-apache python-ndg-httpsclient ssl-cert \
+apt-get -y --no-install-recommends install apache2 certbot python3-certbot-apache python3-ndg-httpsclient ssl-cert \
              acme-tiny
 apt-get -y -u dist-upgrade
 apt-get clean
